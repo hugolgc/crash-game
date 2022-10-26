@@ -4,7 +4,7 @@ import MainIndex from "./main/main.index.vue";
 </script>
 
 <template>
-  <div class="h-screen flex">
+  <div class="h-screen flex flex-col-reverse limit:flex-row">
     <aside-index />
     <main-index />
   </div>

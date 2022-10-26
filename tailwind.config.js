@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        limit: '912px',
+      },
       animation: {
         load: 'bar 10s linear',
       },

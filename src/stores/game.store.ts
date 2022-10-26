@@ -34,7 +34,7 @@ function stop(): void {
   game.oddsToShow = game.oddsLimit;
   game.history.push(game.oddsToShow);
   if (game.preference === "auto") bet();
-  if (game.history.length > 10) game.history = game.history.slice(1);
+  if (game.history.length > 5) game.history = game.history.slice(1);
   setTimeout(() => init(), 10000);
 }
 
