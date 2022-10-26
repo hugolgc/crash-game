@@ -8,7 +8,7 @@ import { gameHelper } from "../../helpers/game.helper";
     <li
       v-for="odds in gameStore.game.history"
       :class="gameHelper.getColorByOdds(odds)"
-      class="px-4 py-2 bg-neutral-800 rounded-md"
+      class="px-4 py-2 rounded-md"
     >{{ odds.toFixed(2).replace('.', ',') }}</li>
   </ul>
 </template>
