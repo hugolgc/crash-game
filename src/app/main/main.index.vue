@@ -19,6 +19,13 @@ const animationSpeed = computed(
 </template>
 
 <style scoped>
+main {
+  background-image: url(../../assets/background.png);
+  background-size: 100vh;
+  background-repeat: repeat;
+  animation: scroll v-bind(animationSpeed) linear infinite;
+}
+
 @keyframes scroll {
   0% {
     background-position: center 0vh;
@@ -26,12 +33,5 @@ const animationSpeed = computed(
   100% {
     background-position: center 100vh;
   }
-}
-
-main {
-  background-image: url(../../assets/background.png);
-  background-size: 100vh;
-  background-repeat: repeat;
-  animation: scroll v-bind(animationSpeed) linear infinite;
 }
 </style>
